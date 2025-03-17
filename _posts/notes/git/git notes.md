@@ -132,7 +132,11 @@ git config --local user.name
 git config --local user.email
 ```
 
-`cd` 用于转到某个仓库下，后面加文件路径。
+手动加载「SSH Key」
+```bash
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_ed25519
+```
 
 
 
