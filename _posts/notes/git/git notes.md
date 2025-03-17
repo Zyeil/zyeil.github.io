@@ -138,5 +138,62 @@ eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_ed25519
 ```
 
+### 修改某个仓库使用的提交账号
 
+```bash
+# 查看此仓库使用的账号
+git config user.name
+git config user.email
 
+# 修改
+git config user.name "name"
+git config user.email "correspoding email"
+```
+
+### 修改历史提交的用户名
+
+```bash
+git rebase -i HEAD~n
+```
+
+然后修改对应的提交记录
+
+```bash
+git rebase --continue
+```
+
+## SSH 认证问题解决
+
+### 检查远程仓库地址
+
+```bash
+git remote -v
+```
+
+### 确保 SSH 正确
+
+```bash
+ssh -T git@github.com
+```
+
+### 添加 SSH Key
+```bash
+# 确保 SSH agent is running
+eval $(ssh-agent -s)
+
+# 添加 SSH Key
+ssh-add ~/.ssh/id_ed25519
+```
+### 让 SSH 代理自动加载密匙
+
+```bash
+# 打开nano配置文件
+nano ~/.bashrc
+
+# 添加
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa_frederic
+
+# 保存
+source ~/.bashrc
+```
