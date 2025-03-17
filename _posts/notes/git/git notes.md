@@ -178,13 +178,18 @@ ssh -T git@github.com
 
 ### 添加 SSH Key
 ```bash
+# 清除缓存的 SSH
+ssh-add -D
+ssh-add ~/.ssh/id_ed25519 # 重新加载密匙
+
+
 # 确保 SSH agent is running
 eval $(ssh-agent -s)
 
 # 添加 SSH Key
 ssh-add ~/.ssh/id_ed25519
 ```
-### 让 SSH 代理自动加载密匙
+### 让 SSH 代理自动加载密匙（感觉还是有问题，目前只保证了手动添加是可行的）
 
 ```bash
 # 打开nano配置文件
