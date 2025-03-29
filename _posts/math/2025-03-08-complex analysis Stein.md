@@ -21,3 +21,5 @@ tags:
 2025.3.21 [解析延拓定理](https://drive.google.com/file/d/1pIXbEHOw2TOKZH0_QPBXVDuIU7sMuKeX/view?usp=sharing)
 
 2025.3.27 [课堂笔记](https://drive.google.com/file/d/1I2VcTtke0pttC9Rgs0Hd3-SgbD9SUVjs/view?usp=sharing)
+
+2025.3.29: [第六周作业](https://drive.google.com/file/d/12cv1rqAs532dfSU3UMuO5pLOjNVs_i4x/view?usp=sharing)
